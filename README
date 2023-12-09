@@ -1,0 +1,15 @@
+# Fundamentos do Node.js
+
+Challenge project for the first module of rocketseat's 2023 Node.js course.
+
+In this project, we are expected to create a barebone API server using just core Node.js features, and also be able to interact with it by reading and sending data from a CSV file.
+
+## Server
+
+The project's structure somewhat resembles [Express](https://expressjs.com/) with usage of middleware functions that mutate the request and/or response objects, and it also has a very simple validator class akin to [express-validator](https://express-validator.github.io/docs/api/validation-chain/).
+
+The database is a simple JSON file.
+
+## Consuming the API
+
+Now, for interacting with the API, we are expected to use the csv-parse library to read the CSV file through streaming and send POST requests for each row in order to populate our JSON database with task records.
