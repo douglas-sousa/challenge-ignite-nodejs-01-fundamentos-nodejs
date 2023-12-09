@@ -13,9 +13,8 @@ async function json (request, response) {
         }
     }
 
+    response.setHeader('content-type', 'application/json');
     response.json = function (message) {
-        response.setHeader('content-type', 'application/json');
-
         try {
             return response.end(JSON.stringify(message));
         } catch {
